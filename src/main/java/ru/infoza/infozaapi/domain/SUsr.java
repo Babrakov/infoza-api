@@ -48,7 +48,7 @@ public class SUsr {
     @Column(name = "inLOG", nullable = false)
     private Integer inLOG;
 
-    @Column(name = "vcHOST", length = 255)
+    @Column(name = "vcHOST")
     private String vcHOST;
 
     @Column(name = "inLST", nullable = false)

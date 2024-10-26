@@ -26,9 +26,11 @@ public class CustomAuthenticationProvider implements AuthenticationProvider {
     }
 
     private boolean canConnectWithCredentials(String username, String password) {
+        // todo move string to env
         String url = "jdbc:mysql://localhost:3307/info"; // Замените на URL вашей базы данных
-        try (Connection connection = DriverManager.getConnection(url, username, password)) {
-            return true;
+        try {
+            DriverManager.getConnection(url, username, password);
+            return true; // Соединение успешно
         } catch (
                 Exception e) {
             return false;

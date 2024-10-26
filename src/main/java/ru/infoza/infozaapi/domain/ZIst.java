@@ -73,13 +73,13 @@ public class ZIst {
     @Column(name = "dtBED")
     private LocalDateTime dtBED;
 
-    @Column(name = "vcSTATUS", length = 255, columnDefinition = "VARCHAR(255) DEFAULT ''")
+    @Column(name = "vcSTATUS", columnDefinition = "VARCHAR(255) DEFAULT ''")
     private String vcSTATUS;
 
     @Column(name = "vcBIRTH", length = 5, columnDefinition = "VARCHAR(5) DEFAULT ''")
     private String vcBIRTH;
 
-    @Column(name = "vcDOLGN", length = 255, columnDefinition = "VARCHAR(255) DEFAULT ''")
+    @Column(name = "vcDOLGN", columnDefinition = "VARCHAR(255) DEFAULT ''")
     private String vcDOLGN;
 
     @Column(name = "dtCBR")
