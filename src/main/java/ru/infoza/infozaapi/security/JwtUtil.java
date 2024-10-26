@@ -18,6 +18,7 @@ public class JwtUtil {
     @Value("${jwt.expiration}")
     private long expiration;
 
+    // todo remove deprecated methods
     public String generateToken(String username) {
         return Jwts.builder()
                 .setSubject(username)
