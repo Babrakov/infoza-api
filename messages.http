@@ -1,0 +1,10 @@
+### GET request to example server
+GET http://localhost:8080/api/v1/messages/all-vacancies
+###
+GET http://localhost:8080/api/v1/messages/vacancies
+###
+GET http://localhost:8080/api/v1/messages/vacancies?page=1&size=20
+###
+GET http://localhost:8080/api/v1/messages/personal
+Authorization: Basic QmFicmFrb3ZTQTpoOzYwdjZ0a20=
+###
