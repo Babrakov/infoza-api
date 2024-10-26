@@ -1,6 +1,5 @@
 package ru.infoza.infozaapi.security;
 
-import java.sql.Connection;
 import java.sql.DriverManager;
 import java.util.ArrayList;
 import org.springframework.security.authentication.AuthenticationProvider;
