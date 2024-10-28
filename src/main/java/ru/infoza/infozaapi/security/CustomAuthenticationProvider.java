@@ -2,6 +2,8 @@ package ru.infoza.infozaapi.security;
 
 import java.sql.DriverManager;
 import java.util.ArrayList;
+
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.authentication.AuthenticationProvider;
 import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -11,6 +13,9 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class CustomAuthenticationProvider implements AuthenticationProvider {
+
+    @Value("${spring.datasource.url}")
+    private String datasourceUrl;
 
     @Override
     public Authentication authenticate(Authentication authentication)
@@ -25,11 +30,9 @@ public class CustomAuthenticationProvider implements AuthenticationProvider {
     }
 
     private boolean canConnectWithCredentials(String username, String password) {
-        // todo move string to env
-        String url = "jdbc:mysql://localhost:3307/info"; // Замените на URL вашей базы данных
         try {
-            DriverManager.getConnection(url, username, password);
-            return true; // Соединение успешно
+            DriverManager.getConnection(datasourceUrl, username, password);
+            return true;
         } catch (
                 Exception e) {
             return false;
