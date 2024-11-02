@@ -1,11 +1,10 @@
 package ru.infoza.infozaapi.service;
 
+import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import ru.infoza.infozaapi.model.ZIst;
+import ru.infoza.infozaapi.domain.ZIst;
 import ru.infoza.infozaapi.repository.ZIstRepository;
-
-import java.util.Optional;
 
 @Service
 public class ZIstService {

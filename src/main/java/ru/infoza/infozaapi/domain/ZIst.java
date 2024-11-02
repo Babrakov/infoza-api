@@ -1,8 +1,13 @@
-package ru.infoza.infozaapi.model;
+package ru.infoza.infozaapi.domain;
 
-import jakarta.persistence.*;
-import lombok.Data;
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 import java.time.LocalDateTime;
+import lombok.Data;
 
 @Entity
 @Table(name = "z_ist")
@@ -68,13 +73,13 @@ public class ZIst {
     @Column(name = "dtBED")
     private LocalDateTime dtBED;
 
-    @Column(name = "vcSTATUS", length = 255, columnDefinition = "VARCHAR(255) DEFAULT ''")
+    @Column(name = "vcSTATUS", columnDefinition = "VARCHAR(255) DEFAULT ''")
     private String vcSTATUS;
 
     @Column(name = "vcBIRTH", length = 5, columnDefinition = "VARCHAR(5) DEFAULT ''")
     private String vcBIRTH;
 
-    @Column(name = "vcDOLGN", length = 255, columnDefinition = "VARCHAR(255) DEFAULT ''")
+    @Column(name = "vcDOLGN", columnDefinition = "VARCHAR(255) DEFAULT ''")
     private String vcDOLGN;
 
     @Column(name = "dtCBR")

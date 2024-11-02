@@ -8,3 +8,14 @@ GET http://localhost:8080/api/v1/messages/vacancies?page=1&size=20
 GET http://localhost:8080/api/v1/messages/personal
 Authorization: Basic QmFicmFrb3ZTQTpoOzYwdjZ0a20=
 ###
+POST http://localhost:8080/api/v1/auth/login
+Content-Type: application/json
+
+{
+  "username": "user",
+  "password": "password"
+}
+###
+GET http://localhost:8080/api/v1/messages/personal
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwiaWF0IjoxNzI5OTc2NzA3LCJleHAiOjE3MzAwNjMxMDd9.OEbCMMmKyLpS0uWlKbsAg3yKiGwRzGFsopGdH0ki3K_qPLd5fCUobtu3p2_fmnTFIVY7Nm7cEYHTGD6qu2fHgQ
+###
