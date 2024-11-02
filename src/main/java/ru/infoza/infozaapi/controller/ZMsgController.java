@@ -14,7 +14,7 @@ import ru.infoza.infozaapi.domain.ZMsg;
 import ru.infoza.infozaapi.service.ZMsgService;
 
 @RestController
-@RequestMapping("/api/v1/messages")
+@RequestMapping("/messages")
 public class ZMsgController {
 
     private final ZMsgService zMsgService;

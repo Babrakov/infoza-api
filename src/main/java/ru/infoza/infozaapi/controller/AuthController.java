@@ -15,7 +15,7 @@ import ru.infoza.infozaapi.security.AuthRequest;
 import ru.infoza.infozaapi.security.JwtUtil;
 
 @RestController
-@RequestMapping("/api/v1/auth")
+@RequestMapping("/auth")
 public class AuthController {
 
     @Autowired
