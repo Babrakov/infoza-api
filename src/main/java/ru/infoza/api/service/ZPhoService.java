@@ -1,10 +1,10 @@
-package ru.infoza.infozaapi.service;
+package ru.infoza.api.service;
 
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import ru.infoza.infozaapi.dto.ZPhoInfoDTO;
-import ru.infoza.infozaapi.repository.ZPhoRepository;
+import ru.infoza.api.dto.ZPhoInfoDTO;
+import ru.infoza.api.repository.ZPhoRepository;
 
 @Service
 public class ZPhoService {

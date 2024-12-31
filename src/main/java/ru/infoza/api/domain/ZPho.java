@@ -1,4 +1,4 @@
-package ru.infoza.infozaapi.domain;
+package ru.infoza.api.domain;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

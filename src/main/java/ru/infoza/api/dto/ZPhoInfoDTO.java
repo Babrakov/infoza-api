@@ -1,4 +1,4 @@
-package ru.infoza.infozaapi.dto;
+package ru.infoza.api.dto;
 
 import java.time.LocalDateTime;
 import lombok.Data;

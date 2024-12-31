@@ -1,4 +1,4 @@
-package ru.infoza.infozaapi;
+package ru.infoza.api;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

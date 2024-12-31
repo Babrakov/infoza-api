@@ -1,4 +1,4 @@
-package ru.infoza.infozaapi.security;
+package ru.infoza.api.security;
 
 import java.sql.DriverManager;
 import java.util.ArrayList;
