@@ -1,4 +1,4 @@
-package ru.infoza.infozaapi.controller;
+package ru.infoza.api.controller;
 
 import java.util.List;
 import org.springframework.data.domain.Page;
@@ -10,11 +10,11 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-import ru.infoza.infozaapi.domain.ZMsg;
-import ru.infoza.infozaapi.service.ZMsgService;
+import ru.infoza.api.domain.ZMsg;
+import ru.infoza.api.service.ZMsgService;
 
 @RestController
-@RequestMapping("/api/v1/messages")
+@RequestMapping("/messages")
 public class ZMsgController {
 
     private final ZMsgService zMsgService;

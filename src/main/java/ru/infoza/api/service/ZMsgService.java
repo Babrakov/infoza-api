@@ -1,4 +1,4 @@
-package ru.infoza.infozaapi.service;
+package ru.infoza.api.service;
 
 import java.util.Collections;
 import java.util.List;
@@ -8,9 +8,9 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.security.core.Authentication;
 import org.springframework.stereotype.Service;
-import ru.infoza.infozaapi.domain.ZIst;
-import ru.infoza.infozaapi.domain.ZMsg;
-import ru.infoza.infozaapi.repository.ZMsgRepository;
+import ru.infoza.api.domain.ZIst;
+import ru.infoza.api.domain.ZMsg;
+import ru.infoza.api.repository.ZMsgRepository;
 
 @Service
 public class ZMsgService {

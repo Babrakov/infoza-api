@@ -1,4 +1,4 @@
-package ru.infoza.infozaapi.controller;
+package ru.infoza.api.controller;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -11,11 +11,11 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import ru.infoza.infozaapi.security.AuthRequest;
-import ru.infoza.infozaapi.security.JwtUtil;
+import ru.infoza.api.security.AuthRequest;
+import ru.infoza.api.security.JwtUtil;
 
 @RestController
-@RequestMapping("/api/v1/auth")
+@RequestMapping("/auth")
 public class AuthController {
 
     @Autowired

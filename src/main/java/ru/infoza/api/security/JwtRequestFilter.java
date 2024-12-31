@@ -1,4 +1,4 @@
-package ru.infoza.infozaapi.security;
+package ru.infoza.api.security;
 
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;

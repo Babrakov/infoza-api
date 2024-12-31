@@ -1,11 +1,11 @@
-package ru.infoza.infozaapi.repository;
+package ru.infoza.api.repository;
 
 import java.util.List;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.jpa.repository.JpaRepository;
-import ru.infoza.infozaapi.domain.ZMsg;
+import ru.infoza.api.domain.ZMsg;
 
 public interface ZMsgRepository extends JpaRepository<ZMsg, Integer> {
 

@@ -1,8 +1,8 @@
-package ru.infoza.infozaapi.repository;
+package ru.infoza.api.repository;
 
 import java.util.Optional;
 import org.springframework.data.jpa.repository.JpaRepository;
-import ru.infoza.infozaapi.domain.SUsr;
+import ru.infoza.api.domain.SUsr;
 
 public interface SUsrRepository extends JpaRepository<SUsr, Integer> {
 
